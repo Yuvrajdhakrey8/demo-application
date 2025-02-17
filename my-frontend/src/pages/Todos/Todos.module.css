@@ -1,0 +1,41 @@
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f0f8ff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+}
+
+.listContainer {
+  margin-top: 10px;
+}
+
+.todoItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.todoContent {
+  flex-grow: 1;
+  gap: 9px;
+  display: flex;
+  flex-direction: column;
+}
+
+.searchBar {
+  margin-bottom: 10px;
+}
