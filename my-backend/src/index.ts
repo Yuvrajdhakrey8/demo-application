@@ -3,6 +3,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 import { User } from "./models";
+import todoRoutes from "./routes/todo.routes";
 
 // Load environment variables
 dotenv.config();
@@ -13,6 +14,7 @@ const app = express();
 // Middleware
 app.use(cors());
 app.use(express.json());
+app.use(todoRoutes);
 
 // MongoDB connection
 const MONGO_URI = process.env.MONGO_URI as string;
